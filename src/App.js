@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+// what looks like html is actually jsx
+
 function App() {
   return (
     <div className="App">
