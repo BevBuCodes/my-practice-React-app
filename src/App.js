@@ -15,8 +15,11 @@ function App() {
 
         <h2 className="greeting">Hello World</h2>
         {Hello}
-        <HelloFromComponent />
-        <HelloFromClassComponent/>
+        <HelloFromComponent name="Trudy"/>
+        <HelloFromClassComponent />
+        <HelloFromClassComponent name="Beverly"/>
+         <HelloFromClassComponent name="Tom"/>
+         <HelloFromClassComponent name="Garrett"/>
         
         
 

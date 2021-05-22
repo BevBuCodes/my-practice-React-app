@@ -1,5 +1,5 @@
-function HelloFromComponent() {
-  return <h2>Hello World from functional component!</h2>
+function HelloFromComponent(props) {
+  return <h2>Hello World from functional component {props.name}!</h2>
 }
 
 export default HelloFromComponent;
