@@ -5,6 +5,14 @@ import HelloFromClassComponent from './components/HelloFromClassComponent'
 
 function App() {
   const Hello = <h2>Hello World from JS</h2>;
+
+  var nameArray = [
+    "Trudy",
+    "Tom",
+    "Garrett"
+  ]
+ 
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,12 +23,12 @@ function App() {
 
         <h2 className="greeting">Hello World</h2>
         {Hello}
-        <HelloFromComponent name="Trudy"/>
-        <HelloFromClassComponent />
-        <HelloFromClassComponent name="Beverly"/>
-         <HelloFromClassComponent name="Tom"/>
-         <HelloFromClassComponent name="Garrett"/>
         
+        <HelloFromComponent name="Beverly"/>
+
+         {nameArray.map(individualName => <HelloFromClassComponent key={individualName} name={individualName}/>)}
+        
+         <HelloFromClassComponent />
         
 
       </header>
